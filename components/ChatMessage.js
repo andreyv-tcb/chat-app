@@ -4,7 +4,7 @@ import { Messages, Texts } from "../styles";
 export default function ChatMessage({ messageObj }) {
     const { name, text, isMyMessage } = messageObj;
 
-    return ( 
+    return (
         <View style={
             isMyMessage ?
                 styles.myMessageDirection :
@@ -13,8 +13,8 @@ export default function ChatMessage({ messageObj }) {
             <View style={{ ...styles.messageContainer }}>
                 <Text style={
                     isMyMessage ?
-                        styles.myUserMessageName :
-                        styles.otherUserMessageName
+                        styles.myUserNameColor :
+                        styles.otherUserNameColor
                 }>{name}</Text>
                 <Text>{text}</Text>
             </View>
